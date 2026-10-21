@@ -12,7 +12,7 @@ python -m usb_tool verify ./photos E:/backup
 python -m unittest discover -s tests -v
 ```
 
-`list` uses Windows drive type information or Linux mount metadata to identify removable volumes. A directory path can be used for testing without a USB device. The tool refuses source/destination overlap, symbolic links, duplicate target names, and paths outside the destination. It copies through a temporary file, flushes it, then replaces the target and verifies the digest. It never formats a drive: destructive formatting is deliberately a separate operating system operation.
+`list` uses Windows drive type information or Linux mount metadata to identify removable volumes. The tool refuses source/destination overlap, symbolic links, duplicate target names, and paths outside the destination. It copies through a temporary file, flushes it, then replaces the target and verifies the digest. It never formats a drive: destructive formatting is deliberately a separate operating system operation.
 
 ## Requirements
 
